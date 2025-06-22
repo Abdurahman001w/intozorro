@@ -1,14 +1,8 @@
-// import { classNames } from 'shared/lib/classNames/classNames';
-// import cls from './index.module.scss';
+import { createRoot } from 'react-dom/client';
+import './app/styles/index.scss'
+import { App } from './app/App';
 
-// interface indexProps {
-//     className?: string;
-// }
-
-// export const index = ({className}: indexProps) => {
-//     return (
-//         <div className={classNames(cls.index, {}, [className!])}>
-            
-//         </div>
-//     );
-// };
+const root = createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+    <App/>
+)
