@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ESNext",
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
     "jsx": "react-jsx",
-    "strict": true,
+    // "baseUrl": ".", что б сделать абсолютные пути
+    "allowJs": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node"
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }
