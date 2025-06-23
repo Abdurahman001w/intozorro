@@ -1,14 +1,11 @@
-// import { classNames } from 'shared/lib/classNames/classNames';
-// import cls from './index.module.scss';
+import { createRoot } from 'react-dom/client';
+import { App } from './app/App';
+import { BrowserRouter } from 'react-router-dom';
+import './app/styles/index.scss';
 
-// interface indexProps {
-//     className?: string;
-// }
-
-// export const index = ({className}: indexProps) => {
-//     return (
-//         <div className={classNames(cls.index, {}, [className!])}>
-            
-//         </div>
-//     );
-// };
+const root = createRoot(document.getElementById('root')!);
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+);
