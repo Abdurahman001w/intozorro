@@ -1,1 +1,15 @@
-//теч
+@import "./reset.scss";
+@import "./variables/global.scss";
+@import "./themes/dark.scss";
+@import "./themes/light.scss";
+
+
+body {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
+
+.app{
+    background: var(--bg-color);
+    min-height: 100vh;
+}

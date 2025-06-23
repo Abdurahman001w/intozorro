@@ -1,9 +1,15 @@
-import { AppRouter } from "./providers/router";
+import { Suspense } from 'react';
+import { classNames } from '../shared/lib/classNames/classNames';
+import { AppRouter } from './providers/router';
+import { useTheme } from './providers/ThemeProvider';
 
 export const App = () => {
-  return (
-    <div>
-      <AppRouter />
-    </div>
-  );
+    const { theme } = useTheme();
+    return (
+        <div className={classNames('app', {}, [theme])}>
+            <Suspense fallback=''>
+                <AppRouter />
+            </Suspense>
+        </div>
+    );
 };

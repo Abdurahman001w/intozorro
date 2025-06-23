@@ -1,0 +1,15 @@
+@mixin root-vars-dark {
+    --bg-color: #fff;
+    --inverted-bg-color: #020100;
+    
+    --primary-color: #BDBDBD;
+    --inverted-primary-color: #e8e8ea;
+}
+
+:root{
+    @include root-vars-dark;
+}
+
+.app.light {
+    @include root-vars-dark;
+}
