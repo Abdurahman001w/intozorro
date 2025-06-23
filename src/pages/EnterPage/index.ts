@@ -1,2 +1,1 @@
-import { EnterPage } from "./ui/EnterPage";
-export { EnterPage };
+export { EnterPage } from "./ui/EnterPage";
