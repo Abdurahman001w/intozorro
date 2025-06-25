@@ -1,8 +1,9 @@
+import { classNames } from "../entities/helpers/classNames/classNames";
 import { AppRouter } from "./providers/router";
 
 export const App = () => {
   return (
-    <div>
+    <div className={classNames("app")}>
       <AppRouter />
     </div>
   );

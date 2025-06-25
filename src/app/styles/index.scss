@@ -1,1 +1,19 @@
-//теч
+@use "variables/global.scss";
+@use "themes/white.scss";
+@use "themes/dark.scss";
+@use "./reset.scss";
+
+.app {
+  font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  font-family: var(--font-family-main);
+}
+.content-page {
+  display: flex;
+}
+.page-wrapper {
+  padding: 20px;
+  flex-grow: 1;
+}
