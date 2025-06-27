@@ -1,4 +1,5 @@
-import React, { Suspense } from 'react';
+import React from 'react';
+import { ErrorPage } from '../../../../widgets/ErrorPage';
 
 interface ErrorBoundaryProps {
     children: React.ReactNode;
@@ -24,7 +25,7 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
 
     render() {
         if (this.state.hasError) {
-            return <Suspense fallback=''>Error/ Need add an err.page</Suspense>;
+            return <ErrorPage />;
         }
 
         return this.props.children;

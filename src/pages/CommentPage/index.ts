@@ -1,0 +1,1 @@
+export { CommentPageLazy as CommentPage } from "./ui/CommentPage.lazy";

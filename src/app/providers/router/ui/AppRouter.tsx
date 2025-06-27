@@ -1,17 +1,19 @@
-import { Route, Routes } from "react-router-dom";
-import { EnterPage } from "../../../../pages/EnterPage";
-import { Link } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
+import { routeConfig } from '../../../../shared/config/routeConfig/routeConfig';
 
-export const AppRouter = () => {
-  return (
-    <div>
-      <div>
-        <Link to="/">Главная</Link>
-        <Link to="/enter">Вход</Link>
-      </div>
-      <Routes>
-        <Route path="/about" element={<EnterPage />} />
-      </Routes>
-    </div>
-  );
-};
+export function AppRouter() {
+    return (
+        <Suspense fallback=''>
+            <Routes>
+                {Object.values(routeConfig).map(({ path, element }) => (
+                    <Route
+                        key={path}
+                        path={path}
+                        element={<div className='page-wrapper'>{element}</div>}
+                    />
+                ))}
+            </Routes>
+        </Suspense>
+    );
+}
