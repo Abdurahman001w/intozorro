@@ -5,15 +5,34 @@
     "module": "esnext",
     "target": "es5",
     "jsx": "react-jsx",
-    // "baseUrl": ".", что б сделать абсолютные пути
+    "baseUrl": ".",
+        "paths": {
+            "*": ["./src/*"]
+        },
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+    ]
   },
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"
     }
-  }
+  },
+  "include": [
+        "src/**/*",
+        "config/**/*",
+        "./config/jest/setupTests.ts", 
+        "./config/storybook"
+  ],
+  "exclude": [
+        "node_modules",
+        "dist"
+  ]
 }
