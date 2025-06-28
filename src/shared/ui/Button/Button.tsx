@@ -1,5 +1,5 @@
 
-import { classNames } from '../../lib/classNames/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 import { FC } from 'react';
 
@@ -42,7 +42,7 @@ export const Button: FC<ButtonProps> = (props) => {
     };
 
     return (
-        <button disabled={disabled} className={classNames(cls.Button, mods, [className!, cls[theme]])} {...otherProps}>
+        <button disabled={disabled} className={classNames(cls.Button, mods, [className, cls[theme]])} {...otherProps}>
             {children}
         </button>
     );

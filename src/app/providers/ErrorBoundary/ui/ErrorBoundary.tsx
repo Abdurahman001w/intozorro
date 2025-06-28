@@ -1,15 +1,15 @@
-import React from 'react';
-import { ErrorPage } from '../../../../widgets/ErrorPage';
+import {ReactNode, Suspense, Component } from 'react';
+import { ErrorPage } from 'widgets/ErrorPage';
 
 interface ErrorBoundaryProps {
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 interface ErrorBoundaryState {
     hasError: boolean;
 }
 
-export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     constructor(props: ErrorBoundaryProps) {
         super(props);
         this.state = { hasError: false };
@@ -25,7 +25,7 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
 
     render() {
         if (this.state.hasError) {
-            return <ErrorPage />;
+            return <ErrorPage/>;
         }
 
         return this.props.children;

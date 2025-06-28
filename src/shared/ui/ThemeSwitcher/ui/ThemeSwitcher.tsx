@@ -1,8 +1,7 @@
-
-import { useTheme } from '../../../../app/providers/ThemeProvider';
-import { classNames } from '../../../lib/classNames/classNames';
-import { Button, ThemeButton } from '../../Button/Button';
 import cls from './ThemeSwitcher.module.scss';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { classNames } from 'shared/lib/classNames/classNames';
 
 interface ThemeSwitcherProps {
     className?: string;
