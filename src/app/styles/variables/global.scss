@@ -1,6 +1,6 @@
-
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 :root {
-    --font-family-main: Inter, "Times New Roman", serif;
+    --font-family-main: "Inter", "Times New Roman", serif;
     --font-size-m: 16px;
     --font-line-m: 24px;
 
@@ -14,7 +14,7 @@
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
-    --navbar-height: 50px;
+    --navbar-height: 70px;
 
     --modal-z-index: 10;
 

@@ -1,12 +1,9 @@
-import { Button } from 'shared/ui/Button/Button';
-import { Input } from 'shared/ui/Input/Input';
+import { Navbar } from 'widgets/Navbar';
 
 export default function HomePage() {
     return (
-        <div>
-            Main Page
-            <Input placeholder='tech' />
-            <Button>click</Button>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+            <Navbar />
         </div>
     );
 }

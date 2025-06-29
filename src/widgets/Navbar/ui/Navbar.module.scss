@@ -1,0 +1,38 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+}
+.logoBlock {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    align-items: center;
+}
+.profileBlock {
+    position: relative;
+    display: flex;
+    column-gap: 60px;
+    color: var(--inverted-primary-color);
+}
+
+.profile {
+    background-color: var(--primary-color);
+    color: var(--inverted-primary-color);
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (prefers-color-scheme: dark) {  
+  .logoBlock {
+    img {
+        background: #ffffff;
+        border-radius: 50px;
+    }
+  }
+}
