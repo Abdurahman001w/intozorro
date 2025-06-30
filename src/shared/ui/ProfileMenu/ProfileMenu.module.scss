@@ -1,0 +1,29 @@
+.ProfileMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    right: 0;
+    top: 45px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.menuVisible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.svgBlock{
+    display: flex;
+    column-gap: 15px;
+}

@@ -1,3 +1,11 @@
 .AppLink {
+    display: inherit;
     color: green;
+    text-decoration: none;
+    transition: .4s ease;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.7);
+        transition: .4s ease;
+    }
 }
