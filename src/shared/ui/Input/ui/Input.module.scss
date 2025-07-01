@@ -1,0 +1,16 @@
+.placeholder {
+    margin-right: 5px;
+}
+
+.input {
+    background: #000;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #aa2d2d;
+    text-shadow: 0 0 0 var(--primary-color);
+
+    &:focus {
+        outline: none;
+    }
+}
