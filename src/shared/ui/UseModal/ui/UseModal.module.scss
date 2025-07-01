@@ -1,0 +1,24 @@
+.UseModal {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 150px;
+}
+.Button {
+  background: rgb(196, 196, 196);
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: black;
+}
+.Flex {
+  padding: 10px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Left {
+  display: flex;
+  column-gap: 20px;
+  h3 {
+    color: black;
+    font-size: var(--font-size-l);
+  }
+}

@@ -1,15 +1,15 @@
 @mixin root-vars-dark {
-    --bg-color: #020100;
-    --inverted-bg-color: #fff;
-    
-    --primary-color: #e8e8ea;
-    --inverted-primary-color: #BDBDBD;
+  --bg-color: #020100;
+  --inverted-bg-color: #fff;
+  --inverted-color: rgb(24, 24, 24);
+  --primary-color: #e8e8ea;
+  --inverted-primary-color: #bdbdbd;
 }
 
-:root{
-    @include root-vars-dark;
+:root {
+  @include root-vars-dark;
 }
 
 .app.dark {
-    @include root-vars-dark;
+  @include root-vars-dark;
 }
